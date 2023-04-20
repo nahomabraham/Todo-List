@@ -16,10 +16,14 @@ export default function App(){
         />
     )
 
-    function addTodo(){
+    function addTodo(todoText){
+        if (todoText.length === 0){
+            alert("Can not add empty todo")
+            return
+        }
         setTodos(prevTodos => [
             ...prevTodos,
-            {text: "Do this", checked: false, id: nanoid()}
+            {text: todoText, checked: false, id: nanoid()}
         ])
     }
 
@@ -30,6 +34,8 @@ export default function App(){
             prevTodo
             )))
     }
+
+
     return (
         <div className="main">
             <TopBar addTodo={addTodo} />
