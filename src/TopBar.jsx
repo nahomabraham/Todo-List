@@ -2,14 +2,14 @@ import React from "react";
 
 export default function TopBar(props){
     let todoText = ""
-    function handleChange(event) {
+    function handleFieldInput(event) {
         todoText = event.target.value
     }
 
     return (
         <>
             <div className="inputs-container">
-            <input type="text" placeholder="New task..." onChange={handleChange}/>
+            <input type="text" placeholder="New task..." onChange={handleFieldInput}/>
             <button onClick={() => props.addTodo(todoText)}>ADD</button>
             </div>
             <div className="tab-bar">

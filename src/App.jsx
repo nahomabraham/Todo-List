@@ -22,8 +22,8 @@ export default function App(){
             return
         }
         setTodos(prevTodos => [
-            ...prevTodos,
-            {text: todoText, checked: false, id: nanoid()}
+            {text: todoText, checked: false, id: nanoid()},
+            ...prevTodos
         ])
     }
 
