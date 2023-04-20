@@ -94,3 +94,7 @@ body {
     background-image: url("../assets/checkbox.png");
     background-size: cover;
 }
+
+.todo-text {
+    font-family: 'Rubik', sans-serif;
+}
