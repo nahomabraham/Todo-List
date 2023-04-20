@@ -19,6 +19,7 @@ body {
     align-items: center;
     gap: 8px;
     height: 25px;
+    margin-bottom: 40px;
 }
 .inputs-container > button{
     padding: 10px 24px;
@@ -34,4 +35,31 @@ body {
     padding: 5px 12px;
     border-radius: 5px;
     border: 1px solid grey;
+}
+
+.tab-bar {
+
+}
+
+.tab-bar > input {
+    display: none;
+
+}
+
+.tab-bar > label {
+    color: #737373;
+    font-size: 12px;
+    font-family: Roboto, sans-serif;
+    padding: 16px 29px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tab-bar > label:hover {
+    background-color: #f7f7f7; 
+}
+
+.tab-bar-selected {
+    border-bottom: 2px solid #3b71ca;
+    color: #3b71ca;
 }
