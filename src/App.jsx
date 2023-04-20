@@ -1,5 +1,5 @@
 import React from "react";
-
+import Todo from "./Todo"
 export default function App(){
     return (
         <div className="main">
@@ -13,9 +13,15 @@ export default function App(){
 
                 <input type="radio" id="active" name="status"/>
                 <label htmlFor="active">ACTIVE</label>
-                
+
                 <input type="radio" id="completed" name="status"/>
                 <label htmlFor="completed">COMPLETED</label>
+            </div>
+            <div className="todo-container">
+                <Todo />
+                <Todo />
+                <Todo />
+                <Todo />
             </div>
         </div>
     )
