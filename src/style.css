@@ -95,6 +95,12 @@ body {
     background-size: cover;
 }
 
-.todo-text {
+.todo-text,
+.todo-text-completed {
     font-family: 'Rubik', sans-serif;
+}
+
+.todo-text-completed {
+    text-decoration: line-through;
+    color: #aaa;
 }
