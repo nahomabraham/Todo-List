@@ -81,10 +81,16 @@ body {
     cursor: pointer;
 }
 
-.todo-checkbox {
+.todo-checkbox,
+.todo-checkbox-checked {
     border: 1px solid #b4b4b4;
     border-radius: 7px;
     width: 24px;
     height: 24px;
 }
 
+.todo-checkbox-checked {
+    border-color: #29ABE2;
+    background-image: url("../assets/checkbox.png");
+    background-size: cover;
+}
