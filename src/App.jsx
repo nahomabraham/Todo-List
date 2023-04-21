@@ -13,6 +13,7 @@ export default function App(){
             text={todo.text}
             checked={todo.checked}
             toggle={() => toggleCheckbox(todo.id)}
+            deleteTodo={(event) => deleteTodo(event, todo.id)}
         />
     )
 
@@ -25,6 +26,11 @@ export default function App(){
             {text: todoText, checked: false, id: nanoid()},
             ...prevTodos
         ])
+    }
+
+    function deleteTodo(event, id){
+        event.stopPropagation()
+        setTodos(prevTodos => prevTodos.filter(todo => todo.id !== id))
     }
 
     function toggleCheckbox(id){
