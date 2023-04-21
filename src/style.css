@@ -64,7 +64,7 @@ body {
 }
 
 .todo-container {
-    margin: 24px 0px;
+    margin: 34px 0px;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -73,13 +73,17 @@ body {
 .todo {
     display: flex;
     align-items: center;
-    gap: 8px;
+    justify-content: space-between;
     padding: 8px 24px;
     background-color: #f2f7f7;
     border-radius: 5px;
     cursor: pointer;
 }
-
+.todo-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 .todo-checkbox,
 .todo-checkbox-checked {
     border: 1px solid #b4b4b4;
@@ -102,4 +106,21 @@ body {
 .todo-text-completed {
     text-decoration: line-through;
     color: #aaa;
+}
+
+.todo-delete {
+    
+    border-radius: 10px;
+    width: 40px;
+    height: 30px;
+}
+
+.todo:hover .todo-delete{
+    background-color: #dd1111;
+    background-image: url("../assets/trash.png");
+    box-shadow: 0px 0px 5px #dd1111;
+    /* box-shadow: 0px 0px 2px #dd1111; */
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
 }

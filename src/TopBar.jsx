@@ -13,8 +13,8 @@ export default function TopBar(props){
             <button onClick={() => props.addTodo(todoText)}>ADD</button>
             </div>
             <div className="tab-bar">
-                <input type="radio" id="all" name="status"/>
-                <label htmlFor="all">ALL</label>
+                <input type="radio" id="all" name="status" checked/>
+                <label htmlFor="all" className="tab-bar-selected">ALL</label>
 
                 <input type="radio" id="active" name="status"/>
                 <label htmlFor="active">ACTIVE</label>
